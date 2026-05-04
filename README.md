@@ -1,80 +1,35 @@
-# Getting Started with GitHub Copilot
+<div align="center">
 
-<img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
+# 🎉 Congratulations mihi-hun! 🎉
 
-Hey mihi-hun!
+<img src="https://octodex.github.com/images/welcometocat.png" height="200px" />
 
-Mona here. I'm done preparing your exercise. Hope you enjoy! 💚
+### 🌟 You've successfully completed the exercise! 🌟
 
-Remember, it's self-paced so feel free to take a break! ☕️
+## 🚀 Share Your Success!
 
-[![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/mihi-hun/skills-getting-started-with-github-copilot/issues/1)
+**Show off your new skills and inspire others!**
 
----
+<a href="https://twitter.com/intent/tweet?text=I%20just%20completed%20the%20%22Getting%20Started%20with%20GitHub%20Copilot%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2Fmihi-hun%2Fskills-getting-started-with-github-copilot%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Share%20on%20X-1da1f2?style=for-the-badge&logo=x&logoColor=white" alt="Share on X" />
+</a>
+<a href="https://bsky.app/intent/compose?text=I%20just%20completed%20the%20%22Getting%20Started%20with%20GitHub%20Copilot%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2Fmihi-hun%2Fskills-getting-started-with-github-copilot%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Share%20on%20Bluesky-0085ff?style=for-the-badge&logo=bluesky&logoColor=white" alt="Share on Bluesky" />
+</a>
+<a href="https://www.linkedin.com/feed/?shareActive=true&text=I%20just%20completed%20the%20%22Getting%20Started%20with%20GitHub%20Copilot%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2Fmihi-hun%2Fskills-getting-started-with-github-copilot%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Share%20on%20LinkedIn-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Share on LinkedIn" />
+</a>
 
-## Testing
+### 🎯 What's Next?
 
-This project includes comprehensive tests for the FastAPI backend using pytest. Tests are organized by feature in the `tests/` directory.
+**Keep the momentum going!**
 
-### Running Tests
+[![](https://img.shields.io/badge/Return%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/mihi-hun/skills-getting-started-with-github-copilot/issues/1)
+[![GitHub Skills](https://img.shields.io/badge/Explore%20GitHub%20Skills-000000?style=for-the-badge&logo=github&logoColor=white)](https://learn.github.com/skills)
 
-**Run all tests:**
-```bash
-pytest tests/ -v
-```
+*There's no better way to learn than building things!* 🚀
 
-**Run with coverage report:**
-```bash
-pytest tests/ --cov=src --cov-report=html
-```
-
-**Run specific test file:**
-```bash
-pytest tests/test_activities.py -v
-```
-
-**Run tests matching a pattern:**
-```bash
-pytest tests/ -k "signup" -v
-```
-
-### Test Structure
-
-Tests are organized by API endpoint functionality:
-
-- **`tests/test_activities.py`** — Tests for the GET `/activities` endpoint
-  - Retrieval of all activities
-  - Response structure validation
-  - Participant list verification
-
-- **`tests/test_signup.py`** — Tests for the POST `/activities/{activity_name}/signup` endpoint
-  - Successful student signup
-  - Error handling (activity not found, already signed up)
-  - Participant count updates
-  - Multi-activity signup workflow
-
-- **`tests/test_unregister.py`** — Tests for the DELETE `/activities/{activity_name}/unregister` endpoint
-  - Successful student unregistration
-  - Error handling (activity not found, not signed up)
-  - Participant count updates
-  - Complete signup/unregister workflow
-
-### Test Fixtures
-
-The `tests/conftest.py` file provides shared fixtures:
-
-- **`client`** — FastAPI TestClient for making requests to the API
-- **`reset_activities`** — Autouse fixture that resets the in-memory activities database before each test
-- **`test_email`** — Email of a pre-registered student
-- **`new_student_email`** — Email for testing new student signups
-
-### CI/CD
-
-Tests run automatically on:
-- Push to the `main` branch
-- Pull requests against `main`
-
-The workflow (`.github/workflows/test.yml`) runs tests with coverage reporting and uploads coverage reports as artifacts.
+</div>
 
 ---
 
